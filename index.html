@@ -4,135 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu Serviço de Streaming</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Bem-vindo ao Seu Serviço de Streaming</h1>
-        <nav>
-            <ul>
-                <li><a href="#catalogo">Catálogo</a></li>
-                <li><a href="#precos">Preços</a></li>
-                <li><a href="#comentarios">Comentários</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+            color: #fff;
+        }
 
-    <section id="catalogo">
-        <h2>Catálogo</h2>
-        <div class="categoria">
-            <h3>Filmes</h3>
-            <!-- Listagem de Filmes -->
-            <div class="item">
-                <img src="link_para_imagem_filme_1.jpg" alt="Filme 1">
-                <h4><a href="link_para_filme_1.com">Filme 1</a></h4>
-                <p>Descrição breve do filme 1...</p>
-            </div>
-            <div class="item">
-                <img src="link_para_imagem_filme_2.jpg" alt="Filme 2">
-                <h4><a href="link_para_filme_2.com">Filme 2</a></h4>
-                <p>Descrição breve do filme 2...</p>
-            </div>
-        </div>
+        header {
+            background: linear-gradient(90deg, #1a73e8, #ff6f61);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
 
-        <div class="categoria">
-            <h3>Desenhos</h3>
-            <!-- Listagem de Desenhos -->
-            <div class="item">
-                <img src="link_para_imagem_desenho_1.jpg" alt="Desenho 1">
-                <h4><a href="link_para_desenho_1.com">Desenho 1</a></h4>
-                <p>Descrição breve do desenho 1...</p>
-            </div>
-            <div class="item">
-                <img src="link_para_imagem_desenho_2.jpg" alt="Desenho 2">
-                <h4><a href="link_para_desenho_2.com">Desenho 2</a></h4>
-                <p>Descrição breve do desenho 2...</p>
-            </div>
-        </div>
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
 
-        <div class="categoria">
-            <h3>Animes</h3>
-            <!-- Listagem de Animes -->
-            <div class="item">
-                <img src="link_para_imagem_anime_1.jpg" alt="Anime 1">
-                <h4><a href="link_para_anime_1.com">Anime 1</a></h4>
-                <p>Descrição breve do anime 1...</p>
-            </div>
-            <div class="item">
-                <img src="link_para_imagem_anime_2.jpg" alt="Anime 2">
-                <h4><a href="link_para_anime_2.com">Anime 2</a></h4>
-                <p>Descrição breve do anime 2...</p>
-            </div>
-        </div>
+        nav ul li {
+            margin: 0 15px;
+        }
 
-        <div class="categoria">
-            <h3>Doramas</h3>
-            <!-- Listagem de Doramas -->
-            <div class="item">
-                <img src="link_para_imagem_dorama_1.jpg" alt="Dorama 1">
-                <h4><a href="link_para_dorama_1.com">Dorama 1</a></h4>
-                <p>Descrição breve do dorama 1...</p>
-            </div>
-            <div class="item">
-                <img src="link_para_imagem_dorama_2.jpg" alt="Dorama 2">
-                <h4><a href="link_para_dorama_2.com">Dorama 2</a></h4>
-                <p>Descrição breve do dorama 2...</p>
-            </div>
-        </div>
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
 
-        <div class="categoria">
-            <h3>Séries</h3>
-            <!-- Listagem de Séries -->
-            <div class="item">
-                <img src="link_para_imagem_serie_1.jpg" alt="Série 1">
-                <h4><a href="link_para_serie_1.com">Série 1</a></h4>
-                <p>Descrição breve da série 1...</p>
-            </div>
-            <div class="item">
-                <img src="link_para_imagem_serie_2.jpg" alt="Série 2">
-                <h4><a href="link_para_serie_2.com">Série 2</a></h4>
-                <p>Descrição breve da série 2...</p>
-            </div>
-        </div>
-    </section>
+        nav ul li a:hover {
+            color: #ff6f61;
+        }
 
-    <section id="precos">
-        <h2>Planos e Preços</h2>
-        <!-- Tabela de preços -->
-        <table>
-            <tr>
-                <th>Plano</th>
-                <th>Preço</th>
-                <th>Descrição</th>
-            </tr>
-            <tr>
-                <td>Básico</td>
-                <td>R$ 19,90/mês</td>
-                <td>Acesso limitado ao catálogo de filmes e séries</td>
-            </tr>
-            <tr>
-                <td>Premium</td>
-                <td>R$ 39,90/mês</td>
-                <td>Acesso completo ao catálogo, incluindo animes e doramas</td>
-            </tr>
-        </table>
-    </section>
+        section {
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1200px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
 
-    <section id="comentarios">
-        <h2>Comentários dos Usuários</h2>
-        <!-- Espaço para comentários -->
-        <div class="comentario">
-            <p>"Adorei o serviço, filmes de ótima qualidade!" - Usuário 1</p>
-        </div>
-        <div class="comentario">
-            <p>"Ótimo catálogo de animes, estou muito satisfeito." - Usuário 2</p>
-        </div>
-    </section>
+        h2 {
+            color: #ff6f61;
+            text-align: center;
+            margin-bottom: 40px;
+        }
 
-    <footer id="contato">
-        <h2>Contato</h2>
-        <p>Email: <a href="mailto:contato@seuservico.com">contato@seuservico.com</a></p>
-        <p>Telefone: <a href="tel:+551199999999">+55 (11) 9999-9999</a></p>
-    </footer>
+        .categoria {
+            margin-bottom: 40px;
+        }
 
+        .item {
+            display: inline-block;
+            width: 23%;
+            margin: 1%;
+            background-color: #2c2c2c;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        .item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .item h4 {
+            color: #ff6f61;
+            padding: 15px;
+            font-size: 18px;
+        }
+
+        .item p {
+            padding: 0 15px 15px;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #444;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+        }
+
+        td {
+            background-color: #2c2c2c;
+        }
+
+        th, td {
+            color: #fff;
+        }
+
+        @media screen and (max-width: 768px) {
+            .item {
+                width: 48%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .item {
+                width: 100%;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
