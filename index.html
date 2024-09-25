@@ -259,100 +259,85 @@
                 </div>
             </div>
         </div>
+
+        <!-- Categoria de Séries -->
+        <div class="categoria">
+            <h3>Séries</h3>
+            <div class="filme-lista">
+                <div class="filme-card">
+                    <img src="link_da_imagem_da_serie.jpg" alt="Nome da Série">
+                    <p>Série 1</p>
+                    <a href="https://linkdaserie1.com" target="_blank">Assistir</a>
+                </div>
+                <div class="filme-card">
+                    <img src="link_da_imagem_da_serie.jpg" alt="Nome da Série">
+                    <p>Série 2</p>
+                    <a href="https://linkdaserie2.com" target="_blank">Assistir</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categoria de Doramas -->
+        <div class="categoria">
+            <h3>Doramas</h3>
+            <div class="filme-lista">
+                <div class="filme-card">
+                    <img src="link_da_imagem_do_dorama.jpg" alt="Nome do Dorama">
+                    <p>Dorama 1</p>
+                    <a href="https://linkdodorama1.com" target="_blank">Assistir</a>
+                </div>
+                <div class="filme-card">
+                    <img src="link_da_imagem_do_dorama.jpg" alt="Nome do Dorama">
+                    <p>Dorama 2</p>
+                    <a href="https://linkdodorama2.com" target="_blank">Assistir</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Categoria de Séries -->
-<div class="categoria">
-    <h3>Séries</h3>
-    <div class="filme-lista">
-        <div class="filme-card">
-            <img src="link_da_imagem_da_serie.jpg" alt="Nome da Série">
-            <p>Série 1</p>
-            <a href="https://linkdaserie1.com" target="_blank">Assistir</a>
-        </div>
-        <div class="filme-card">
-            <img src="link_da_imagem_da_serie.jpg" alt="Nome da Série">
-            <p>Série 2</p>
-            <a href="https://linkdaserie2.com" target="_blank">Assistir</a>
-        </div>
-    </div>
-</div>
-
-<!-- Categoria de Doramas -->
-<div class="categoria">
-    <h3>Doramas</h3>
-    <div class="filme-lista">
-        <div class="filme-card">
-            <img src="link_da_imagem_do_dorama.jpg" alt="Nome do Dorama">
-            <p>Dorama 1</p>
-            <a href="https://linkdodorama1.com" target="_blank">Assistir</a>
-        </div>
-        <div class="filme-card">
-            <img src="link_da_imagem_do_dorama.jpg" alt="Nome do Dorama">
-            <p>Dorama 2</p>
-            <a href="https://linkdodorama2.com" target="_blank">Assistir</a>
-        </div>
-    </div>
-</div>
-
-    <!-- Planos de Assinatura -->
+    <!-- Seção de Planos de Assinatura -->
     <section id="planos" class="planos">
         <h2>Planos de Assinatura</h2>
         <div class="plano-container">
             <div class="plano">
-                <h3>Básico</h3>
-                <p>A partir de R$19,90/mês</p>
-                <ul>
-                    <li>Acesso a todo o catálogo em SD</li>
-                    <li>1 dispositivo</li>
-                </ul>
-                <a href="#">Assine Agora</a>
-            </div>
-            <div class="plano destaque">
-                <h3>Padrão</h3>
-                <p>A partir de R$29,90/mês</p>
-                <ul>
-                    <li>Acesso a todo o catálogo em HD</li>
-                    <li>2 dispositivos</li>
-                </ul>
-                <a href="#">Assine Agora</a>
+                <h3>Plano Básico</h3>
+                <p>R$ 29,90/mês</p>
+                <a href="#contato">Assinar</a>
             </div>
             <div class="plano">
-                <h3>Premium</h3>
-                <p>A partir de R$39,90/mês</p>
-                <ul>
-                    <li>Acesso a todo o catálogo em 4K</li>
-                    <li>4 dispositivos</li>
-                </ul>
-                <a href="#">Assine Agora</a>
+                <h3>Plano Premium</h3>
+                <p>R$ 49,90/mês</p>
+                <a href="#contato">Assinar</a>
             </div>
         </div>
     </section>
 
-    <!-- Avaliações -->
+    <!-- Seção de Avaliações -->
     <section id="avaliacoes" class="avaliacoes">
-        <h2>Avaliações dos Usuários</h2>
+        <h2>Avaliações</h2>
         <div class="avaliacao">
-            <p>"A melhor plataforma de streaming que já usei!" - João</p>
+            <p>"Ótima plataforma! Adorei os filmes."</p>
+            <p>- João</p>
         </div>
         <div class="avaliacao">
-            <p>"Grande variedade de conteúdos e preços acessíveis." - Maria</p>
-        </div>
-        <div class="avaliacao">
-            <p>"Perfeito para maratonar minhas séries favoritas." - Pedro</p>
+            <p>"Os doramas são incríveis, recomendo!"</p>
+            <p>- Maria</p>
         </div>
     </section>
 
-    <!-- Contato -->
+    <!-- Seção de Contato -->
     <section id="contato" class="contato">
-        <h2>Fale Conosco</h2>
-        <form action="#">
+        <h2>Contato</h2>
+        <form>
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email">
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
             <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem"></textarea>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
             <button type="submit">Enviar</button>
         </form>
     </section>
@@ -361,6 +346,5 @@
     <footer>
         <p>&copy; 2024 StreamMax. Todos os direitos reservados.</p>
     </footer>
-
 </body>
 </html>
