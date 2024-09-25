@@ -11,7 +11,7 @@
     <!-- Cabeçalho -->
     <header>
         <div class="logo">
-            <h1>AmorimStream</h1>
+            <h1>StreamMax</h1>
         </div>
         <nav>
             <ul>
@@ -41,7 +41,6 @@
                     <p>Filme 2</p>
                     <a href="https://linkdofilme2.com" target="_blank">Assistir</a>
                 </div>
-                <!-- Mais filmes podem ser adicionados -->
             </div>
         </div>
 
@@ -59,7 +58,6 @@
                     <p>Desenho 2</p>
                     <a href="https://linkdodesenho2.com" target="_blank">Assistir</a>
                 </div>
-                <!-- Mais desenhos podem ser adicionados -->
             </div>
         </div>
 
@@ -77,21 +75,81 @@
                     <p>Anime 2</p>
                     <a href="https://linkdoanime2.com" target="_blank">Assistir</a>
                 </div>
-                <!-- Mais animes podem ser adicionados -->
             </div>
         </div>
+    </section>
 
-        <!-- Você pode adicionar outras categorias como Doramas, Séries, etc., da mesma forma -->
+    <!-- Planos de Assinatura -->
+    <section id="planos" class="planos">
+        <h2>Planos de Assinatura</h2>
+        <div class="plano-container">
+            <div class="plano">
+                <h3>Básico</h3>
+                <p>A partir de R$19,90/mês</p>
+                <ul>
+                    <li>Acesso a todo o catálogo em SD</li>
+                    <li>1 dispositivo</li>
+                </ul>
+                <a href="#">Assine Agora</a>
+            </div>
+            <div class="plano destaque">
+                <h3>Padrão</h3>
+                <p>A partir de R$29,90/mês</p>
+                <ul>
+                    <li>Acesso a todo o catálogo em HD</li>
+                    <li>2 dispositivos</li>
+                </ul>
+                <a href="#">Assine Agora</a>
+            </div>
+            <div class="plano">
+                <h3>Premium</h3>
+                <p>A partir de R$39,90/mês</p>
+                <ul>
+                    <li>Acesso a todo o catálogo em 4K</li>
+                    <li>4 dispositivos</li>
+                </ul>
+                <a href="#">Assine Agora</a>
+            </div>
+        </div>
+    </section>
 
+    <!-- Avaliações -->
+    <section id="avaliacoes" class="avaliacoes">
+        <h2>Avaliações dos Usuários</h2>
+        <div class="avaliacao">
+            <p>"A melhor plataforma de streaming que já usei!" - João</p>
+        </div>
+        <div class="avaliacao">
+            <p>"Grande variedade de conteúdos e preços acessíveis." - Maria</p>
+        </div>
+        <div class="avaliacao">
+            <p>"Perfeito para maratonar minhas séries favoritas." - Pedro</p>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+        <h2>Fale Conosco</h2>
+        <form action="#">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </section>
 
     <!-- Rodapé -->
     <footer>
-        <p>&copy; 2024 AmorimStream Todos os direitos reservados.</p>
+        <p>&copy; 2024 StreamMax. Todos os direitos reservados.</p>
     </footer>
 
 </body>
-</html>/* Estilos gerais */
+</html>
+
+/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -108,6 +166,8 @@ header {
 
 nav ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -120,9 +180,10 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Estilos para a seção de catálogo */
+/* Seção de catálogo */
 .catalogo {
     padding: 20px;
+    background-color: #fff;
 }
 
 .categoria {
@@ -136,10 +197,11 @@ nav ul li a {
     margin-bottom: 15px;
 }
 
-/* Estilos dos filmes (cards) */
 .filme-lista {
     display: flex;
     gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .filme-card {
@@ -173,10 +235,39 @@ nav ul li a {
     background-color: #e64a19;
 }
 
-footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
+/* Planos de assinatura */
+.planos {
     padding: 20px;
-    margin-top: 50px;
+    background-color: #f9f9f9;
 }
+
+.plano-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plano {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.plano h3 {
+    margin-top: 0;
+}
+
+.plano a {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.plano a:hover {
+    background-color: #0056
